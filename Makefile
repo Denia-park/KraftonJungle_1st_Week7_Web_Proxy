@@ -19,6 +19,9 @@ proxy.o: proxy.c csapp.h
 proxy: proxy.o csapp.o
 	$(CC) $(CFLAGS) proxy.o csapp.o -o proxy $(LDFLAGS)
 
+hostinfo: csapp.o
+	$(CC) $(CFLAGS) hostinfo.c csapp.o -o hostinfo $(LDFLAGS)
+
 # Creates a tarball in ../proxylab-handin.tar that you can then
 # hand in. DO NOT MODIFY THIS!
 handin:
