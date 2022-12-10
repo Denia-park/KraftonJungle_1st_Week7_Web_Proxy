@@ -194,6 +194,10 @@ int open_listenfd(char* port);
 int Open_clientfd(char* hostname, char* port);
 int Open_listenfd(char* port);
 
+// IP Address structure
+struct in_addr {
+    uint32_t s_addr; // Address in network byte order (big endian)
+};
 
 #endif /* __CSAPP_H__ */
 /* $end csapp.h */
